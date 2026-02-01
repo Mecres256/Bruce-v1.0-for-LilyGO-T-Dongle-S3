@@ -34,4 +34,4 @@ edukacyjnych i testów na własnych urządzeniach.
 - Scripts are inside each option menu, confirm the same way  
 - Exit menu: keep pressing until "Exit" appears  
 
-#>>> For full instructions, see INSTRUKCJA_PL.txt / INSTRUCTIONS_EN.txt
+For full instructions, see INSTRUKCJA_PL.txt / INSTRUCTIONS_EN.txt
