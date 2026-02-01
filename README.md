@@ -1,9 +1,9 @@
 # Bruce v1.0 for LilyGO T-Dongle S3
 
-🇵🇱 Interfejs graficzny / nakładka menu dla USB Army Knife
+PL Interfejs graficzny / nakładka menu dla USB Army Knife
 działająca na LilyGO T-Dongle S3.
 
-🇬🇧 Graphical/menu overlay for USB Army Knife
+EN Graphical/menu overlay for USB Army Knife
 running on LilyGO T-Dongle S3.
 
 ---
