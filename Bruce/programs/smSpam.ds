@@ -1,0 +1,3 @@
+ESP32M blespam -t samsung
+DELAY 10000
+

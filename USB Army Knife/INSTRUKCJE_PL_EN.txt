@@ -1,0 +1,35 @@
+===== PL =====
+
+https://esptool.spacehuhn.com/
+
+Jak wgrać USB Army Knife:
+
+1. Skopiuj powyższy link do przeglądarki internetowej i otwórz stronę. Posłuży ona do wgrania USB Army Knife.
+2. Na stronie kliknij "CONNECT". Wyskoczy okienko.
+3. Przytrzymaj przycisk na LilyGO T-Dongle S3 i [dalej z wciśniętym przyciskiem]
+   podłącz go do komputera. Po podłączeniu możesz puścić przycisk.
+4. Z okienka wybierz urządzenie "USB JTAG/serial debug unit (COM5)". UWAGA! Liczba obok COM może być inna.
+5. Ustaw wartości jak na zdjęciu [w tym samym folderze - "JAK USTAWIC WARTOSCI"].
+6. Kliknij "PROGRAM".
+7. Poczekaj aż oprogramowanie się zainstaluje i po komunikacie o pomyślnym wgraniu odłącz urządzenie.
+
+===== EN =====
+
+https://esptool.spacehuhn.com/
+
+How to flash USB Army Knife:
+
+1. Copy the link above into your web browser and open the page.
+   This tool will be used to flash USB Army Knife.
+2. On the page, click "CONNECT". A dialog window will appear.
+3. Press and hold the button on the LilyGO T-Dongle S3 and,
+   while still holding the button, connect it to the computer via USB.
+   After connecting, you can release the button.
+4. From the dialog window, select the device:
+   "USB JTAG/serial debug unit (COM5)".
+   WARNING: The COM port number may be different on your system.
+5. Set the values exactly as shown in the image
+   (located in the same folder – "JAK USTAWIC WARTOSCI").
+6. Click "PROGRAM".
+7. Wait until the firmware is fully installed.
+   After receiving a successful flash message, disconnect the device.

@@ -1,0 +1,89 @@
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bruce v1.0 for LilyGO T-Dongle S3 - to graficzna nakładka przypominająca system
+Bruce Firmware, który działa na np. urządzeniach M5stack i LilyGO.
+Bruce NIE działa na LilyGO T-Dongle S3, dlatego zrobiłem system który będzie na nim działać.
+Aby system działał jak powinien należy najpierw wgrać na LilyGO T-Dongle S3
+oprogramowanie USB Army Knife [jest w tym folderze].
+
+1. Otwórz folder "USB Army Knife" i postępuj zgodnie z tamtą instrukcją.
+2. Gdy USB Army Knife będzie zainstalowany włóż kartę Micro SD do komputera.
+3. Skopiuj pliki z folderu "Bruce" na kartę SD. UWAGA! Nie kopiuj folderu "Bruce", tylko pliki i foldery, które są wewnątrz niego.
+4. Wysuń kartę SD z komputera i wsuń ją do slotu w LilyGO T-Dongle S3 [ukryty w porcie USB].
+5. Podłącz LilyGO T-Dongle S3 do dowolnego źródła zasilania - komputer, powerbank itp.
+6. Wyświetli się interfejs znany z Bruce.
+
+=== NAWIGACJA PO SYSTEMIE ===
+
+1. Domyślnie wyświetlana będzie opcja "WiFi"
+2. Aby przełączać się pomiędzy opcjami kliknij w przycisk
+3. Aby zatwierdzić opcję przytrzymaj przycisk przez 3 sek.
+4. W menu danej opcji będą zawarte skrypty, pomiędzy którymi można się przełączać tak jak między opcjami.
+5. Aby zatwierdzić skrypt należy przytrzymać przycisk przez 3 sek.
+6. W opcjach są zawarte skrypty, które według mnie są najbardziej podstawowe i dobre do nauki i zabawy
+7. Po uruchomieniu skryptu np. "Rickroll" z opcji "WiFI" urządzenie zacznie spamować sieciami WiFi.
+   > aby dowiedzieć się więcej o działaniu tych i innych poleceń odwiedź stronę: https://github.com/justcallmekoko/ESP32Marauder/wiki/cli
+8. Aby wyjść z menu opcji klikaj aż dojdziesz do funkcji "Exit". Wyświetli się następna opcja
+
+=== MENU OPCJI, MENU SKRYPTÓW ===
+
+1. WiFi
+   > Rickroll
+   > Deauth
+   > Random SSID spam
+2. Bluetooth
+   > iPhone spam
+   > Samsung spam
+3. Broadcasting
+   > Apple page Evil Portal
+4. Utilities
+   > Rickroll on Windows [USB]
+   > Funny CMD prank [USB]
+   > Pusty skrypt [REM]
+5. Windows
+   > Win Activation (NIE polecam ze względów prawnych) [USB]
+   > Create Admin [USB]
+   > Pusty skrypt [REM]
+6. Android
+   > UnlockMyOldPhone - LilyGO T-Dongle S3 podłączony przewodowo przez USB do telefonu z systemem Android szybko odblokuje go. (taki sam PIN musi być wpisany w pliku autorun.ds*).
+   > Pusty skrypt [REM]
+   > Pusty skrypt [REM]
+
+=== WŁASNE POLECENIA ===
+
+Aby dodać własne polecenia otwórz plik autorun.ds w notatniku i zastąp skrypty [np. opdowiadające za Deauth] albo miejsca zapisane jako "REM".
+Możesz też zmieniać nazwy wyświetlane podczas uruchamiania skryptów.
+
+
+--- jak zrobiony jest ten system? ---
+
+Ten system (Bruce v1.0 for LilyGO T-Dongle S3) bazuje na poleceniach Rubber Ducky i Marauder.
+Interfejs jest zrobniony z oddzielnych grafik. Dlatego edytując zdjęcia w folderach: files, more, select; można całkowicie zmienić wygląd!
+
+struktura folderów [co do czego]:
+
+files: interfejs menu opcji
+more: ten sam interfejs menu opcji, ale z przyciemnionymi strzałkami [dalej]
+select: też ten sam interfejs menu opcji, ale z przyciemnionymi ikonami [potwierdzenie]
+
+autorun.ds - cały kod sterujący systemem Bruce v1.0 for LilyGO T-Dongle S3
+
+apple.html - fake'owa strona Apple wykorzystywana w skrypcie Apple page Evil Portal
+
+AUTORUN.INF - po prostu nazwa tej karty SD
+
+inne foldery: nie są związane z systemem. W nich są kiedyś testowane elementy [disabled]. W folderze "test" jest czcionka systemu. Jej usunięcie
+              nie spowoduje szkód, ale dzięki niej można modyfikować interfejs używając tej samej czcionki.
+
+programs: skrypty w oddzielnych plikacj (otwierając je w notatniku można zobaczyć z jakiego kodu się składają). Można je kasować - system z nich nie korzysta.
+
+>>> dlaczego tak a nie inaczej? <<<
+
+Wiem, że można by to było zrobić dużo lepiej - optymalizacja by się przydała, ale jest to pierwsza z bardzo wielu wersji,
+która rzeczywiście jest w stanie działać na tym urządzeniu.
+
+   PS: Mam nadzieję, że dobrze się będzie korzystać z tego urządzenia w taki sposób :)
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Oryginalny twórca: Mecres256
+
+*- zakładając, że 1234 to PIN do podłączonego telefonu. Można go zmienić na swój.

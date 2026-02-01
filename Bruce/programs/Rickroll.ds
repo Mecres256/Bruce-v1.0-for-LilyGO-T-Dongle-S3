@@ -1,0 +1,9 @@
+GUI r
+DELAY 1000
+STRING https://www.youtube.com/watch?v=xvFZjo5PgG0
+DELAY 1000
+ENTER
+
+REM Now blast the lyrics over WiFI
+ESP32M attack -t rickroll
+
