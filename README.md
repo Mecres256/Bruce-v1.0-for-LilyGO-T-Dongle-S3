@@ -1,37 +1,113 @@
-# Bruce v1.0 for LilyGO T-Dongle S3
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bruce v1.0 for LilyGO T-Dongle S3 is a graphical overlay resembling the
+Bruce Firmware system, which runs on devices such as M5Stack and LilyGO.
 
-PL Interfejs graficzny / nakładka menu dla USB Army Knife
-działająca na LilyGO T-Dongle S3.
+Bruce does NOT run on the LilyGO T-Dongle S3, therefore I created a system
+that works on this device.
 
-EN Graphical/menu overlay for USB Army Knife
-running on LilyGO T-Dongle S3.
+For the system to work properly, you must first flash the USB Army Knife
+software to the LilyGO T-Dongle S3 [included in this folder].
 
----
+1. Open the "USB Army Knife" folder and follow the instructions provided there.
+2. After USB Army Knife is installed, insert the Micro SD card into your computer.
+3. Copy the files from the "Bruce" folder to the SD card.
+   WARNING! Do NOT copy the "Bruce" folder itself — only the files and folders inside it.
+4. Safely remove the SD card from the computer and insert it into the LilyGO T-Dongle S3
+   (the slot is hidden inside the USB port).
+5. Connect the LilyGO T-Dongle S3 to any power source — computer, power bank, etc.
+6. The Bruce-style interface will appear.
 
-## Disclaimer / Ostrzeżenie
+=== SYSTEM NAVIGATION ===
 
-This project is for educational and research purposes only.  
-Do not use on devices you do not own or have permission to test.  
+1. By default, the "WiFi" option is displayed.
+2. To switch between options, press the button.
+3. To confirm an option, hold the button for 3 seconds.
+4. Each option contains scripts that can be navigated the same way as the main options.
+5. To run a script, hold the button for 3 seconds.
+6. The available options include scripts that I consider the most basic
+   and suitable for learning and experimentation.
+7. After launching a script such as "Rickroll" from the "WiFi" option,
+   the device will start spamming WiFi networks.
+   > To learn more about how these and other commands work, visit:
+     https://github.com/justcallmekoko/ESP32Marauder/wiki/cli
+8. To exit an option menu, keep clicking until you reach the "Exit" function.
+   The next option will then be displayed.
 
-Projekt przeznaczony wyłącznie do celów 
-edukacyjnych i testów na własnych urządzeniach.
+=== OPTIONS MENU / SCRIPTS MENU ===
 
----
+1. WiFi
+   > Rickroll
+   > Deauth
+   > Random SSID spam
+2. Bluetooth
+   > iPhone spam
+   > Samsung spam
+3. Broadcasting
+   > Apple page Evil Portal
+4. Utilities
+   > Rickroll on Windows [USB]
+   > Funny CMD prank [USB]
+   > Empty script [REM]
+5. Windows
+   > Windows Activation (NOT recommended for legal reasons) [USB]
+   > Create Admin [USB]
+   > Empty script [REM]
+6. Android
+   > UnlockMyOldPhone – LilyGO T-Dongle S3 connected via USB to an Android phone
+     will quickly unlock it (the same PIN must be set in the autorun.ds file*).
+   > Empty script [REM]
+   > Empty script [REM]
 
-## Contents / Zawartość
+=== CUSTOM COMMANDS ===
 
-- `usb-army-knife/` – USB Army Knife software  
-- `bruce/` – graphical UI and scripts  
-- `INSTRUKCJA_PL.txt` – Polish instructions  
-- `INSTRUCTIONS_EN.txt` – English instructions  
+To add your own commands, open the autorun.ds file in a text editor
+and replace existing scripts (e.g. those responsible for Deauth)
+or the sections marked as "REM".
 
----
+You can also change the names displayed when scripts are executed.
 
-## System Navigation / Nawigacja po systemie
+--- HOW IS THIS SYSTEM MADE? ---
 
-- Switch options: press button  
-- Confirm option: hold button 3 seconds  
-- Scripts are inside each option menu, confirm the same way  
-- Exit menu: keep pressing until "Exit" appears  
+This system (Bruce v1.0 for LilyGO T-Dongle S3) is based on Rubber Ducky
+and Marauder commands.
 
-For full instructions, see INSTRUKCJA_PL.txt / INSTRUCTIONS_EN.txt
+The interface is built from separate graphic files.
+By editing images in the folders: files, more, select,
+you can completely change the appearance of the system.
+
+Folder structure (what is what):
+
+files   – main options menu interface
+more    – the same options menu interface, but with dimmed arrows [next]
+select  – the same options menu interface, but with dimmed icons [confirm]
+
+autorun.ds – the entire control code for Bruce v1.0 for LilyGO T-Dongle S3
+
+apple.html – fake Apple page used in the "Apple page Evil Portal" script
+
+AUTORUN.INF – simply the name of the SD card
+
+other folders – not related to the system; they contain previously tested
+                elements [disabled]. The "test" folder contains the system font.
+                Removing it will not cause damage, but keeping it allows
+                interface modification using the same font.
+
+programs – scripts stored as separate files (opening them in a text editor
+           shows their source code). They can be deleted — the system does not
+           depend on them.
+
+>>> WHY IS IT DONE THIS WAY? <<<
+
+I am aware that this could be done much better — optimization would help,
+but this is the first of many versions that actually works on this device.
+
+PS: I hope you enjoy using this device in this form :)
+
+>>> Bruce Predatory Firmware is NOT my project. My project is just an UI <<<
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Original author: Mecres256
+
+* Assuming that 1234 is the PIN of the connected phone.
+  You can change it to your own.
