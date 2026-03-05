@@ -82,8 +82,10 @@ Wiem, że można by to było zrobić dużo lepiej - optymalizacja by się przyda
 która rzeczywiście jest w stanie działać na tym urządzeniu.
 
    PS: Mam nadzieję, że dobrze się będzie korzystać z tego urządzenia w taki sposób :)
+>>> Bruce Predatory Firmware to NIE jest mój projekt. Mój projekt to tylko UI <<<
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Oryginalny twórca: Mecres256
+
 
 *- zakładając, że 1234 to PIN do podłączonego telefonu. Można go zmienić na swój.
