@@ -1,4 +1,3 @@
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bruce v1.0 for LilyGO T-Dongle S3 is a graphical overlay resembling the
 Bruce Firmware system, which runs on devices such as M5Stack and LilyGO.
 
