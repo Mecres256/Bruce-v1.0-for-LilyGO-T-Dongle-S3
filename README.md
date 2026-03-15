@@ -1,3 +1,7 @@
+What's new:
+- new WiFi icon
+- WiFi, BLE, USB indicator
+
 Bruce v1.0 for LilyGO T-Dongle S3 is a graphical overlay resembling the
 Bruce Firmware system, which runs on devices such as M5Stack and LilyGO.
 
@@ -35,27 +39,27 @@ software to the LilyGO T-Dongle S3 [included in this folder].
 === OPTIONS MENU / SCRIPTS MENU ===
 
 1. WiFi
-   > Rickroll
-   > Deauth
-   > Random SSID spam
+   * Rickroll
+   * Deauth
+   * Random SSID spam
 2. Bluetooth
-   > iPhone spam
-   > Samsung spam
+   * iPhone spam
+   * Samsung spam
 3. Broadcasting
-   > Apple page Evil Portal
+   * Apple page Evil Portal
 4. Utilities
-   > Rickroll on Windows [USB]
-   > Funny CMD prank [USB]
-   > Empty script [REM]
+   * Rickroll on Windows [USB]
+   * Funny CMD prank [USB]
+   * Typing ASCII "DONGLE" in notepad [USB]
 5. Windows
-   > Windows Activation (NOT recommended for legal reasons) [USB]
-   > Create Admin [USB]
-   > Empty script [REM]
+   * Windows Activation (NOT recommended for legal reasons) [USB]
+   * Create Admin [USB]
+   * Open website ptoszek.pl on Windows [USB]
 6. Android
-   > UnlockMyOldPhone – LilyGO T-Dongle S3 connected via USB to an Android phone
+   * UnlockMyOldPhone – LilyGO T-Dongle S3 connected via USB to an Android phone
      will quickly unlock it (the same PIN must be set in the autorun.ds file*).
-   > Empty script [REM]
-   > Empty script [REM]
+   * Empty script [REM]
+   * Empty script [REM]
 
 === CUSTOM COMMANDS ===
 
@@ -87,22 +91,23 @@ apple.html – fake Apple page used in the "Apple page Evil Portal" script
 AUTORUN.INF – simply the name of the SD card
 
 other folders – not related to the system; they contain previously tested
-                elements [disabled]. The "test" folder contains the system font.
-                Removing it will not cause damage, but keeping it allows
+                elements and font PNG file [disabled].
+                Removing it will not cause damage,
+                but keeping it allows
                 interface modification using the same font.
 
 programs – scripts stored as separate files (opening them in a text editor
            shows their source code). They can be deleted — the system does not
            depend on them.
 
->>> WHY IS IT DONE THIS WAY? <<<
+WHY IS IT DONE THIS WAY? <<<
 
 I am aware that this could be done much better — optimization would help,
 but this is the first of many versions that actually works on this device.
 
 PS: I hope you enjoy using this device in this form :)
 
->>> Bruce Predatory Firmware is NOT my project. My project is just an UI <<<
+Bruce Predatory Firmware is NOT my project. My project is just an UI <<<
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
