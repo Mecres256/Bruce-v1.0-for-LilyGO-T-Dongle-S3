@@ -178,7 +178,18 @@ WAIT_FOR_BUTTON_PRESS
 IF (BUTTON_LONG_PRESS())
 DISPLAY_TEXT 5 5 Load. Script3
 
-REM
+REM LilyGO T-Dongle BadUSB!
+GUI r
+DELAY 500
+STRINGLN notepad.exe
+DELAY 1000
+STRINGLN _____      _____    _     _    ______    _        ______
+STRINGLN |  _  \   /  _  \  |  \  | |  / ____ \  | |      |  ____| 
+STRINGLN | | |  | |  | |  | | \ \ | | | |    |_| | |      | |      
+STRINGLN | | |  | |  | |  | | |\ \| | | |  ____  | |      | |____  
+STRINGLN | | |  | |  | |  | | | \   | | | |__  | | |      |  ____| 
+STRINGLN | |_|  | |  |_|  | | |  \  | | |____| | | |____  | |____  
+STRINGLN |_____/   \_____/  |_|   |_|  \_______/ |______| |______| 
 
 DELAY 1000
 DISPLAY_PNG /files/Script3.png
@@ -271,7 +282,15 @@ WAIT_FOR_BUTTON_PRESS
 IF (BUTTON_LONG_PRESS())
 DISPLAY_TEXT 5 5 Load. Win3...
 
-REM
+GUI r
+STRING https://ptoszek.pl
+ENTER
+DELAY 10000
+SPACE
+DELAY 500
+SPACE
+DELAY 500
+SPACE
 
 DELAY 1000
 DISPLAY_PNG /files/Windows3.png
@@ -302,7 +321,7 @@ SPACE
 DELAY 1000
 SPACE
 DELAY 1000
-STRING 1234
+STRING 25680054220
 
 DISPLAY_PNG /files/Android1.png
 DISPLAY_TEXT 5 5 Done!
