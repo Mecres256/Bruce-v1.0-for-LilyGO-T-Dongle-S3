@@ -1,6 +1,9 @@
 What's new:
+- more scripts
 - new WiFi icon
+- new Utilities icon
 - WiFi, BLE, USB indicator
+- TIP: If you have an Apple Watch, you can use it to remotely run .ds scripts by opening the page http://4.3.2.1:8080/. The watch must be connected to the T-Dongle 
 
 Bruce v1.0 for LilyGO T-Dongle S3 is a graphical overlay resembling the
 Bruce Firmware system, which runs on devices such as M5Stack and LilyGO.
